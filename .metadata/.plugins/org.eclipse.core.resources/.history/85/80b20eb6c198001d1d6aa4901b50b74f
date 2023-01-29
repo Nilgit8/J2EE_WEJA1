@@ -1,0 +1,52 @@
+package com.jspider.song;
+
+import java.util.Scanner;
+
+public class MusicPlayer {
+	static Scanner sc = new Scanner(System.in);
+	static boolean loop = true;
+
+	public static void main(String[] args) {
+		while (loop) {
+			test();
+		}
+			
+	}
+
+	public static void test() {
+		Song song=new Song(1,"Kesariya","Bramhastra","Arjit Singh");
+		
+		System.out.println("Menu");
+		System.out.println("1.play song");
+		System.out.println("2.Add/Remove song");
+		System.out.println("3.Update song");
+		System.out.println("4.Exit");
+	//	System.out.println(song);
+		
+		
+		int choice=sc.nextInt();
+		SongOperation so=new SongOperation();
+		
+		switch (choice) {
+		case 1:so.playSong();
+			
+			break;
+		case 2:so.addRemove();
+			break;
+		case 3:so.updateSong();
+		
+		break;
+
+		default:so.exit();
+			break;
+		}
+		
+		//System.out.println(song.getAlbum());
+	}
+//	 switch(choice);
+	// case 1: playSong();
+	// case 2: addSong();
+	// case 3: updateSong();
+//	 case 4: loop(false);
+
+}

@@ -1,0 +1,73 @@
+package com.jspider.song;
+
+import java.util.Scanner;
+
+public class Song {
+	static Scanner sc=new Scanner(System.in);
+	private int id;
+	private String name;
+	private String album;
+	private String singer;
+
+	
+
+
+	public Song() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAlbum() {
+		return album;
+	}
+
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+
+	public String getSinger() {
+		return singer;
+	}
+
+	public void setSinger(String singer) {
+		this.singer = singer;
+	}
+
+	@Override
+	public String toString() {
+		return "Song [id=" + id + ", name=" + name + ", album=" + album + ", singer=" + singer + "]";
+	}
+
+	public void addsong() {
+		int songid=sc.nextInt();
+		String songName=sc.next();
+		String album=sc.next();
+		String singer=sc.next();
+		System.out.println("put song id");
+		this.id=songid;
+		System.out.println("put song name");
+		this.name=name;
+		System.out.println("put album name");
+		this.album=album;
+		System.out.println("put singer name");
+		this.singer=singer;
+		// TODO Auto-generated method stub
+		
+	}
+
+}

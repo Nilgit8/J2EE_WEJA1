@@ -1,0 +1,54 @@
+package com.jspider.song;
+
+import java.util.Scanner;
+
+public class SongOperation {
+	static Scanner sc=new Scanner(System.in);
+
+	public void playSong() {
+		System.out.println("1.Play all songs");
+		System.out.println("2.Choose song");
+		System.out.println("3.Play Random");
+		System.out.println("4.Go back");
+		
+		int choice=sc.nextInt();
+
+		switch(choice)
+		{
+		case 1: System.out.println("All songs are playing");
+			
+			break;
+		case 2: System.out.println("Select one song");
+			break;
+		case 3: System.out.println("Songs playing randomly now");
+		
+		break;
+
+		default:so.exit();
+			break;
+	    }
+		
+	}
+	
+
+	public void addRemove() {
+		System.out.println("1.Add song");
+		System.out.println("2.Remove Song");
+		System.out.println("3.Go back");
+	}
+
+	public void updateSong() {
+		System.out.println("1.Name");
+		System.out.println("2.singer");
+		System.out.println("3.Album");
+		System.out.println("4.Go back");
+	}
+
+	public void exit() {
+		System.out.println("Exit Appliation");
+
+	}
+
+
+	
+}

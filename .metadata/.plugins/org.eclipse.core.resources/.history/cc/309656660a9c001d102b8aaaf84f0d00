@@ -1,0 +1,5 @@
+package com.jspider.multithreading.thread;
+
+public class Thread {
+
+}

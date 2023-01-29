@@ -1,0 +1,101 @@
+package com.jspider.song;
+
+import java.util.*;
+import java.util.ArrayList;
+
+
+public class Song {
+	static Scanner sc=new Scanner(System.in);
+	private String id;
+	private String name;
+	private String album;
+	private String singer;
+	 private ArrayList<Song> songs;
+	 
+
+	public Song() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Song(String songid, String songName, String album2, String singer2) {
+		// TODO Auto-generated constructor stub
+     	this.id=songid;
+	    this.name=songName;
+	    this.album=album2;
+		this.singer=singer2;
+		songs.add(new Song();
+		//ArrayList<Song> song1=new Song()<>;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAlbum() {
+		return album;
+	}
+
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+
+	public String getSinger() {
+		return singer;
+	}
+
+	public void setSinger(String singer) {
+		this.singer = singer;
+	}
+
+	@Override
+	public String toString() {
+		return "Song [id=" + id + ", name=" + name + ", album=" + album + ", singer=" + singer + "]";
+	}
+
+	public void addsong() {
+		System.out.println("put song id");
+		String songid=sc.next();
+		System.out.println("put song name");
+		String songName=sc.next();
+		System.out.println("put album name");
+		String album=sc.next();
+		System.out.println("put singer name");
+		String singer=sc.next();
+
+		Song song1=new Song(songid,songName,album,singer);
+		//song.add(new ArrayList ());
+		System.out.println(songName + "successfully added to the list");
+		System.out.println(song);
+		
+		
+		
+		// TODO Auto-generated method stub
+		
+	}
+	
+	 public boolean addSong1(String title, double duration){
+	        if(findSong(title) == null){
+	            songs.add(new Song(title,duration));
+//	            System.out.println(title + "successfully added to the list");
+	            return true;
+	        }
+	        else {
+//	            System.out.println("Song with name "+ title+ " already exist in the list");
+	            return false;
+	        }
+
+	
+
+}

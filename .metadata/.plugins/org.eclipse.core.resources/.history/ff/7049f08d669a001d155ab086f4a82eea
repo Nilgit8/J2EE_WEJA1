@@ -1,0 +1,83 @@
+package com.jspider.song;
+
+import java.util.*;
+import java.util.ArrayList;
+
+import com.nilesh.Song;
+
+
+
+public class Song {
+	static Scanner sc=new Scanner(System.in);
+	private int id;
+	private String name;
+	private String album;
+	private String singer;
+	 private ArrayList<Song> songs;
+
+	public Song() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAlbum() {
+		return album;
+	}
+
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+
+	public String getSinger() {
+		return singer;
+	}
+
+	public void setSinger(String singer) {
+		this.singer = singer;
+	}
+
+	@Override
+	public String toString() {
+		return "Song [id=" + id + ", name=" + name + ", album=" + album + ", singer=" + singer + "]";
+	}
+
+	public Song addsong() {
+		System.out.println("put song id");
+		int songid=sc.nextInt();
+		System.out.println("put song name");
+		String songName=sc.next();
+		System.out.println("put album name");
+		String album=sc.next();
+		System.out.println("put singer name");
+		String singer=sc.next();
+		this.id=songid;
+		this.name=songName;
+		this.album=album;
+		this.singer=singer;
+		songs.add(new Song());
+		Song()=songName
+       System.out.println(songName + "successfully added to the list");
+       return Song();
+		
+		
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
