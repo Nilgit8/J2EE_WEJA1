@@ -32,10 +32,10 @@ public class JdbcSelectEmp {
 	 statement=connection.createStatement();
 
 	 //insert operation
-//	 query="insert into employee values('3', 'Mohan', 'Python Dev', '9745632100', 'mohan@gmail.com'),"
-//	 		+ "('4', 'Dipak', 'Testing', '8523697416', 'dipak@gmail.com'),"
-//	 		+ "('5', 'Vaibhav', 'Java Dev', '765489123', 'vaibhav@gmail.com')";
-//	 result=statement.executeUpdate(query);
+	 query="insert into employee values('3', 'Mohan', 'Python Dev', '9745632100', 'mohan@gmail.com'),"
+	 		+ "('6', 'Dipak', 'Testing', '8523697416', 'dipak@gmail.com'),"
+	 		+ "('7', 'Vaibhav', 'Java Dev', '765489123', 'vaibhav@gmail.com')";
+	 result=statement.executeUpdate(query);
 	 System.out.println("query ok "+result+" row's affected");
 	 query="select * from employee";
 	resultSet=statement.executeQuery(query);

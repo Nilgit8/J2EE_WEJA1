@@ -12,47 +12,35 @@ import com.jspiders.serializationdeserialization.object.User;
 
 public class UserMain {
 	public static void main(String[] args) {
-		User user=new User(1,"Aaitya","aditya123");
-		File file=new File("file.txt");
 		try {
-			file.createNewFile();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		//SERIALIZATION
-		try {
-			FileOutputStream fileout=new FileOutputStream("file1.txt");
-		
-			 ObjectOutputStream	objectOut = new ObjectOutputStream(fileout);
-			
-			objectOut.writeObject(user);
-			System.out.println("object written");
-			objectOut.flush();
-			objectOut.close();
-		
-			//DESERIALIZATION
-			FileInputStream fileIn=new FileInputStream("file.txt");
-			ObjectInputStream objectIn=new ObjectInputStream(fileIn);
-			
-			 User readObject = (User)objectIn.readObject();
-			 
-			System.out.println(readObject);
-			objectIn.close();
+			File file=new File("nil.txt");
+			if (file.exists()) {
+				System.out.println("file alredy exist");
+			} else {
+				file.createNewFile();
+				System.out.println("file created");
 			}
-		catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			FileOutputStream fileOutputStream=new FileOutputStream(file);
+			FileInputStream fileInputStream=new FileInputStream(file);
+			
+			//serialization
+			ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
+			User user=new User(1, "NILESH","NIL@1999");
+			objectOutputStream.writeObject(user);
+			System.out.println("object is written");
+			objectOutputStream.close();
+			
+			//deserialization
+			ObjectInputStream inputStream=new ObjectInputStream(fileInputStream);
+			User oUser=(User)inputStream.readObject();
+			System.out.println(oUser);
+			inputStream.close();
+			
+		} catch (Exception e) {
 		}
 		
-	}
-		
+
 }
+}
+
+	

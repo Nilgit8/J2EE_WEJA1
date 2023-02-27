@@ -31,7 +31,8 @@ public static void main(String[] args) {
 		 connection = DriverManager.getConnection(properties.getProperty("dburl"),properties);
 		 
 		 statement=connection.createStatement();
-		 query="delete from student where id=4";
+	//	 query="delete from student where id=4";
+		 query="insert into student values('4','vaibhav','7845693210','vaibhav@gmail.com')";
 		 
 		 result=statement.executeUpdate(query);
 		 System.out.println("query ok "+result+" row's affected");

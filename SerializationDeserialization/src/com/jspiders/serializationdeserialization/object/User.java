@@ -4,9 +4,8 @@ import java.io.Serializable;
 
 public class User implements Serializable{
 	
-
-	
-	 int id;
+	private static final long serialVersionUID = 1L;
+	int id;
 	 String username;
 	 String password;
 
@@ -14,8 +13,6 @@ public class User implements Serializable{
 		this.id=id;
 		this.username=username;
 		this.password=password;
-		
-
 	}
 public String toString() {
 	return "user[id="+id+",username="+username+",password="+password+"]";
