@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.Properties;
 
 public class JdbcSelectEmp {
-  private static String filepath ="E:\\WEJA1_J2EE\\jdbc\\src\\resources\\db_info.properties";
+  private static String filepath ="D:\\Qsp course\\WEJA1_J2EE\\jdbc\\src\\resources\\db_info.properties";
   private static FileReader fileReader;
   private static Properties properties;
   private static Connection connection;

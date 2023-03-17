@@ -15,7 +15,7 @@ public class MusicPlayerMain {
 	public static void test() {
 		System.out.println("-------------------\n Menu \n-------------------- \n1.play song \n2.Add/Remove song "
 				+ "\n3.Update song \n4.Exit \n--------------------");
-		
+		gffjgjh
 		System.out.println("choose option : ");
 		int choice=sc.nextInt();
 		OperationSong operationSong=new OperationSong();

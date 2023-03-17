@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
     <fullyQualifiedTypeName name="com.jspider.song.SongOperation"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jspider.song.Song"/>
     <fullyQualifiedTypeName name="com.jspider.multithreading.thread.MyThread1"/>
     <fullyQualifiedTypeName name="com.jspider.multithreading.thread.MyThread2"/>
@@ -12,11 +11,8 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.jspiders.MusicplayerJdbc.operation.Song"/>
     <fullyQualifiedTypeName name="com.jspiders.MusicplayerJdbc.operation.SongOperation"/>
-    <fullyQualifiedTypeName name="com.jspiders.MusicplayerJdbc.operation.SongInfo"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
@@ -24,5 +20,30 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jspiders.MusicplayerJdbc.operation.MusicPlayerMain"/>
     <fullyQualifiedTypeName name="com.jspiders.MusicplayerJdbc.operation.OperationSong"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.jspiders.MusicplayerJdbc.operation.SongInfo"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="com.jspiders.hibernateMusicPlayer.operation.SongOperation"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.transaction.TransactionalException"/>
+    <fullyQualifiedTypeName name="com.jspiders.hibernate.DTO.Song"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="org.hibernate.TransactionException"/>
+    <fullyQualifiedTypeName name="com.jspiders.hibernateMusicPlayer.operation.MusicPlayerMenu"/>
+    <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.jspiders.hibernateMusicPlayer.operation.Song"/>
 </qualifiedTypeNameHistroy>
